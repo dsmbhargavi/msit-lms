@@ -19,8 +19,6 @@ class LargeCard extends Component {
         <div className="button-fix">
         <button type="button" class="btn btn-outline-primary">{this.props.button}</button>
         </div>
-        
-      
     </div>
   </div>
 </div>
