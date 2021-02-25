@@ -15,3 +15,26 @@
 body, h1, h2, h3, h4, h5, h6  {
     font-family: "Times New Roman", Times, serif;
   }
+.image {
+  max-height: inherit;
+  max-width: inherit;
+}
+
+.text-prop {
+  text-align: justify;
+  position: inherit;
+}
+
+.pad {
+  padding-left: inherit;
+  padding-right: inherit;
+}
+
+.pos {
+  margin-left: 65%;
+  position: inherit;
+}
+.card:hover {
+  /* background: url(https://www.udemy.com/staticx/udemy/js/webpack/icon-play.ac3f32ecb72a0c3f674fa5a3f3062a56.svg); */
+  background-color: aliceblue;
+}

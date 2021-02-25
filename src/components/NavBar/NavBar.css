@@ -1,6 +1,7 @@
-.navbar-colour{
-    background-color: #563d7c;
+.navbar-colour {
+  background-color: #563d7c;
 }
-.nav-fix{
-   padding-top: 16rem;
+
+.nav-link:hover {
+  opacity: 0.8;
 }
