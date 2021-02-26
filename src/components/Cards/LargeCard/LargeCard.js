@@ -20,7 +20,7 @@ class LargeCard extends Component {
 
   render() {
     return (
-      <div class='card mb-3 pad' style={{ maxWidth: "540px" }}>
+      <div class='card mb-3 pad'>
         <div class='row g-0'>
           <div class='col-md-4'>
             <img class='image' src={this.props.image} alt='...'></img>
