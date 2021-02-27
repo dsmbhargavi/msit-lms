@@ -19,24 +19,27 @@ class ListPrograms extends Component {
   }
 
   render() {
-    id++;
+    ++id;
+    let colapse = "colapse" + id;
+    let head = "head" + id;
+
     return (
       <div className='accordion-item'>
-        <h2 className='accordion-header' id={"head" + id}>
+        <h2 className='accordion-header' id={head}>
           <button
-            className='accordion-button'
+            className='accordion-button collapsed'
             type='button'
             data-bs-toggle='collapse'
-            data-bs-target={`#colapse${id}`}
+            data-bs-target={`#${colapse}`}
             aria-expanded='false'
-            aria-controls={"colapse" + id}>
+            aria-controls={colapse}>
             {this.props.title}
           </button>
         </h2>
         <div
-          id={"colapse" + id}
+          id={colapse}
           className='accordion-collapse collapse'
-          aria-labelledby={"head" + id}
+          aria-labelledby={head}
           data-bs-parent='#accordionExample'>
           <div className='accordion-body' id='flow1'>
             <div>
@@ -49,7 +52,7 @@ class ListPrograms extends Component {
               type='button'
               className='btn btn-outline-primary'
               onClick={() => {
-                this.handleListClick(this.props.ID);
+                this.handleListClick(this.props.id);
               }}
               style={{ float: "right" }}>
               {this.props.button}

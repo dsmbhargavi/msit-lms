@@ -4,7 +4,7 @@ import "./LargeCard.css";
 
 class LargeCard extends Component {
   handleClick(ID) {
-    var layoutStyle = this.props.layout;
+    var layoutStyle = true;
     console.log("ID after recieving = " + ID);
     console.log(`card view prop = ${this.props.view}`);
     if (this.props.view === "programs") {

@@ -1,8 +1,10 @@
 .navbar-colour {
   background-color: #563d7c;
 }
-.nav-link{
-  position: relative;
+
+.nav-link:hover {
+  border: 2px solid white;
+  border-radius: 20px;
 }
 .nav-link:after {
   position: absolute;
