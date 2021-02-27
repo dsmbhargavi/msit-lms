@@ -4,7 +4,7 @@ import "./list-programs.css";
 var id = 0;
 class ListPrograms extends Component {
   handleListClick(ID) {
-    var layoutStyle = this.props.layout;
+    var layoutStyle = false;
     console.log("list-programs ID after recieving = " + ID);
     console.log(`list view prop = ${this.props.view}`);
     if (this.props.view === "programs") {

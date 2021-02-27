@@ -1,7 +1,21 @@
 .navbar-colour {
   background-color: #563d7c;
 }
-
-.nav-link:hover {
-  opacity: 0.8;
+.nav-link{
+  position: relative;
+}
+.nav-link:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '';
+  color: white;
+  background: white;
+  height: 4px;
+}
+.nav-link:hover:after {
+  width: 50px;
 }
